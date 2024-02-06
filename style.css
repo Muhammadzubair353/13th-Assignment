@@ -1,0 +1,105 @@
+body{
+    margin: auto;
+    padding: auto;
+    background-image: linear-gradient(to  top, #a08963, #cc945f, #865315);
+}
+.container-xxl{
+    width: 100%;
+    height: 100vh;
+    position: relative;  
+    
+
+}
+.navbar{
+    background-image: linear-gradient(to  top, #a08963, #cc945f, #865315);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 20px;
+}
+.first{
+    width: 40%;
+    height: 900px;
+    position: relative;
+    border: 1px solid rgb(156, 156, 156);
+    background-color:#a08963;
+    top: 35%;
+    left: 50%;
+    z-index: 0;
+
+}
+.second{
+    width: 60%;
+    height: 80vh ;
+    background-image: url(./Assets/44-min.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    bottom: 90%;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.third{
+    width: 80%;
+    height: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start ;
+    margin-left: 10%;
+    bottom: 100%;
+    position: relative;
+    gap: 20px;
+    z-index: 2;
+}
+.footer{
+    width: 100vw;
+    background-image: linear-gradient(to  right, #a08963, #cc945f, #865315);
+    display: flex;
+    flex-direction: column;
+    position: static;
+    bottom: 0;
+    left: 0;
+    margin-left: 0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    z-index: -1;
+}
+.offcanvas-body{
+    background-color: #a08963;
+}
+.card{
+    padding: 10px;
+    background-color: #f7c79bd3;
+    color: grey;
+}
+.card-title{
+    color: grey;
+    font-size: 2em;
+}
+h6{
+    color: grey;
+    font-size: 1.5em;
+}
+/* ------Media Query ------ */
+@media screen and (max-width:600px) {
+    .first{
+        top: 25%;   
+        display: block;
+    }
+    .second{
+        bottom: 130% ;
+        width: 70%;
+        left: 10%;
+        display: block;
+    }
+    .third{
+        bottom: 180%;
+        display: block;
+    }
+}
